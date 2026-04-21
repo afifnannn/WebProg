@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <nav>
+        <span><strong>HackerDash</strong> Participant</span>
+        <div>
+            <a href="user_profile.php">My Team</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome back, <?php echo $data['username']; ?>!</h2>
+        <div class="profile-card">
+            <h3>Team: <?php echo $data['team_name']; ?></h3>
+            <p><strong>Project:</strong> <?php echo $data['project_title']; ?></p>
+            <p><strong>Status:</strong> <span style="color: green;">Verified</span></p>
+        </div>
+        <br>
+        <a href="update_project.php" class="btn">Update Project Details</a>
+    </div>
+</body>
+</html>
